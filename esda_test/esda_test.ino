@@ -55,9 +55,9 @@
 
   /* PID parameters and functions */
   #include "diff_controller.h"
-  
+
   /* Run the PID loop at 10 times per second */
-  #define PID_RATE           10     // Hz*/
+  #define PID_RATE           1     // Hz*/
 
   /* Convert the rate into an interval */
   const int PID_INTERVAL = 1000 / PID_RATE; 
@@ -261,6 +261,8 @@ void setup() {
    interval and check for auto-stop conditions.
 */
 void loop() {
+
+// read in string
   while (Serial.available() > 0) {
     
     // Read the next character
@@ -309,6 +311,7 @@ void loop() {
 #ifdef USE_BASE
 
   if (millis() > nextPID) {
+    updateEncoders();
     updatePID();
     nextPID += PID_INTERVAL;
   }
