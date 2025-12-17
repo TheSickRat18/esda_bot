@@ -109,7 +109,7 @@
     } else if (spd < 0) {
       // Map reverse speeds (-255 to -1) to 1200-1400 μs
       // us = map(spd, -255, -1, 1200, 1400);
-      us = 1450; // for now map to a single pw
+      us = 1400; // for now map to a single pw
     } else {
       // Map forward speeds (1 to 255) to 1600-1800 μs
       // us = map(spd, 1, 255, 1600, 1800);
