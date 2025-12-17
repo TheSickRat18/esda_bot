@@ -23,7 +23,7 @@
 #undef USE_SERVOS     // Disable use of PWM servos
 
 /* Serial port baud rate */
-#define BAUDRATE     9600
+#define BAUDRATE     115200
 
 /* Maximum PWM signal */
 #define MAX_PWM        255
@@ -35,29 +35,29 @@
 #endif
 
 /* Include definition of serial commands */
-#include "/Users/dlseo/OneDrive/Desktop/MCAV/ESDA/esda_test/commands.h"
+#include "/home/daniel/ESDA/esda_bot/esda_test/commands.h"
 
 /* Sensor functions */
-#include "/Users/dlseo/OneDrive/Desktop/MCAV/ESDA/esda_test/sensors.h"
+#include "/home/daniel/ESDA/esda_bot/esda_test/sensors.h"
 
 /* Include servo support if required */
 #ifdef USE_SERVOS
    #include <Servo.h>
-   #include "/Users/dlseo/OneDrive/Desktop/MCAV/ESDA/esda_test/servos.h"
+   #include "/home/daniel/ESDA/esda_bot/esda_test/servos.h"
 #endif
 
 #ifdef USE_BASE 
   /* Motor driver function definitions */
-  #include "/Users/dlseo/OneDrive/Desktop/MCAV/ESDA/esda_test/motor_driver.h"
+  #include "/home/daniel/ESDA/esda_bot/esda_test/motor_driver.h"
 
   /* Encoder driver function definitions */
-  #include "encoder_driver.h"
+  #include "/home/daniel/ESDA/esda_bot/esda_test/encoder_driver.h"
 
   /* PID parameters and functions */
-  #include "diff_controller.h"
+  #include "/home/daniel/ESDA/esda_bot/esda_test/diff_controller.h"
 
   /* Run the PID loop at 10 times per second */
-  #define PID_RATE           1     // Hz*/
+  #define PID_RATE           50     // Hz*/
 
   /* Convert the rate into an interval */
   const int PID_INTERVAL = 1000 / PID_RATE; 
