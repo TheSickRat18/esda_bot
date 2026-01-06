@@ -114,7 +114,9 @@ Enter values between **1000–2000**:
 - Power supply settings:
 - Voltage: **24.00V**
 - Current limit: **3.00A**
-- Ensure **Arduino Pin 9** is connected to ESC **RX** wire.
+- As the Arduino pin is configured to pin 9 please ensure that D9 pin is connected to ESC **RX** wire.
+  <img width="1443" height="481" alt="image" src="https://github.com/user-attachments/assets/00157dc7-e731-4473-aa81-83539b0df778" />
+
 - Verify motor wires are correctly connected.
 
 ![ESC Power](https://github.com/user-attachments/assets/735899c6-1bf6-4378-b20f-b504d1950af9)
