@@ -5,6 +5,9 @@ This guide explains how to test the encoder and motor system using an **STM32 bo
 The STM32 reads encoder data and calculates RPM, while the Arduino controls motor speed and direction via an ESC.
 
 ---
+## Prerequisites
+- A recent version of **STM32CubeIDE**
+- **ArduinoIDE** (preferably version **v2.3.2**)
 
 ## Hardware Required
 - Arduino Mega board + usb cable
