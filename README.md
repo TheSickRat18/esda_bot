@@ -73,7 +73,7 @@ The STM32 reads encoder data and calculates RPM, while the Arduino controls moto
 2. Connect the **Arduino Mega** via USB.
 3. In **Tools → Port**, select the correct COM port.
 4. Click **Verify** and wait for compilation.
-5. Click **Upload** and wait for ESC beeping.
+5. Click **Upload** and wait for ESC beeping sequence to finish.
 6. Open **Tools → Serial Monitor**.
 
 ---
