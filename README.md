@@ -3,23 +3,26 @@
 ENCODER TESTING
 
 Hardware needed:
+
 Arduino Mega board
 STM32 board
 Encoder sensor (A3144)
 jumper wires
 
 Software needed:
+
 encoder_final.zip (STM32CubeIDE)
 ESC_programming_code.ino (ArduinoIDE)
 
 Software Setup
 
 STM32CubeIDE Setup
+
   Download the encoder_final.zip. 
   Open STM32CubeIDE and create a workspace
   Go to File -> Import -> Archive File -> Open encoder_final.zip
   Once you have imported it should appear on the left hand side of the screen in the Project Explorer.
-  In the project explorer, Right click on the project and click build project to build the project. It should build without any errors, but if any errors try cleaning the project and rebuilding.
+  In the project explorer, Right click on the project and click build project to build the project. It should build without any errors, but if any errors try cleaning the project and        rebuilding.
   Click OK for code generation.
 
 Now go to Core -> Src -> main.c - This is the code that continuously collects encoder data from the sensor and calculates the encoder speed. You want to run this and view the RPM measurement. 
@@ -34,6 +37,7 @@ Running the code:
   6. Open the console you just created. Now we can view the RPM as it is being printed every 1sec.
 
 ArduinoIDE Setup
+
   Now that you have run the STM32 program successfully, we need to run the ESC_programming_code.ino file simultaneously. THis code allows the Arduino Mega to control the direction and speed   of the motor. You will need to 
   1. OPen the file
   2. ensure the Arduino Mega is also connected to your computer's usb port.
@@ -54,6 +58,7 @@ Now that you have got the motor to work, you can test the motor by going forward
 Troubleshooting
 
 Issue: No encoder reading
+
 - Ensure the encoder jumper wire connections are secure and correct.
   
 - Ensure encoder pins are connected to the correct pins on the STM32. Pin configuration of encoder:
@@ -64,6 +69,7 @@ Issue: No encoder reading
   <img width="1026" height="768" alt="image" src="https://github.com/user-attachments/assets/f56402f4-df38-4c8d-a228-5438c397adee" />
 
 Issue: motor not working
+
 - Ensure the 24V power cable is connected to the red and black wires of the ESC as seen in digram below. The power cable is inside Asterius in the empty space below the circuitry.
   <img width="1256" height="590" alt="image" src="https://github.com/user-attachments/assets/735899c6-1bf6-4378-b20f-b504d1950af9" />
 - Ensure the power supply is ON and set to 24.00V and the current limit at 3.00A.
