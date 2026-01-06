@@ -51,6 +51,7 @@ The STM32 reads encoder data and calculates RPM, while the Arduino controls moto
 
 - Locate the ST-Link COM port (e.g. COM3).
 4. Configure the console:
+- Add New connection
 - Select the correct COM port
 - Leave encoding as default
 
