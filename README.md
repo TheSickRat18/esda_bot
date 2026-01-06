@@ -7,10 +7,12 @@ The STM32 reads encoder data and calculates RPM, while the Arduino controls moto
 ---
 
 ## Hardware Required
-- Arduino Mega board  
-- STM32 board  
+- Arduino Mega board + usb cable
+- STM32 board + usb cable
 - Encoder sensor (A3144)  
-- Jumper wires  
+- Jumper wires
+- Benchtop Power Supply (connect to an XT90 cable going to 24V rail on Asterius)
+- Your laptop
 
 ---
 
