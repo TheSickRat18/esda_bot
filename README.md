@@ -72,9 +72,10 @@ The STM32 reads encoder data and calculates RPM, while the Arduino controls moto
 1. Open `ESC_programming_code.ino`.
 2. Connect the **Arduino Mega** via USB.
 3. In **Tools → Port**, select the correct COM port.
-4. Click **Verify** and wait for compilation.
-5. Click **Upload** and wait for ESC beeping sequence to finish.
-6. Open **Tools → Serial Monitor**.
+4. Switch ESC ON
+5. Click **Verify** and wait for compilation.
+6. Click **Upload** and wait for ESC beeping sequence to finish.
+7. Open **Tools → Serial Monitor**.
 
 ---
 
